@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root {
+    --fonte-principal: Josefin Sans;
+}
+/* <-- SELECIONA TODOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal), cursive, Arial; /* MUDAR FONTE */
+    font-size: 20px;
+}
+
+/* CRIAR O ESPAÇO ENTRE AS COISAS DA PÁGINA (MARGEM, ESPAÇO EXTERNO; PADDING, ESPAÇO INTERNO) */
+
+/* COR DO FUNDO DA MARGEM (TOPO DA PÁGINA) */
+#nav {
+    background-color: crimson;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nav ul li {
+    list-style: none;
+    display: inline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#nav ul#menu li {
+    float: left;
+    border-radius: 8px;
+}
+
+#nav ul.right li {
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#nav ul li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav ul#menu li.active {
+    background-color: darkred;
+
+}
+
+#nav ul#menu li:hover {
+    background-color: darkred;
+}
+
+.container {
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+}
+.gold {
+    background-color: gold;
+}
+.banner {
+    position: relative;
+}
+.banner::before {
+    content: "";
+    background-image: url(../img/bandeirinhas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.btn {
+    font-family: var(--fonte-principal);
+    padding: 15px;
+    margin: 30px 0;
+    border-radius: 45px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover { background-color: darkred; }
+section {padding-bottom: 20px;}
+blockquote, p, hr {margin-bottom: 10px;}
+section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+[class*="col-"] {
+    float: left; padding-right: 5px;
+}
+.col-1 {width: 8.33%; float: left; padding-right: 10px;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.32%;}
+.col-5 {width: 41.65%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.31%;}
+.col-8 {width: 66.64%;}
+.col-9 {width: 74.97%;}
+.col-10 {width: 83.3%;}
+.col-11 {width: 91.63%;}
+.col-12 {width: 100%;}
+/* Seção Alimentos */
+#alimentos img {
+    height: 200px;
+}
+#alimentos h6 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #f8f8f8;
+    background-color: crimson;
+    border-radius: 0 0 8px 8px;
+    font-weight: normal;
+    padding: 5px;
+}
+/* Ajuste nas imagens */
+img {
+    width: 100%;
+}
+img.img_ajuste {
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+#atracoes {
+    background-color: chartreuse;
+    }
+h2 {
+    margin-left: 15px;
+    color: crimson;
+}
+#barraca {
+    margin: 15px;
+    font-weight: bold;
+}
+#rosa {
+    background-color: pink;
+}
